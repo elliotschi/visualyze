@@ -1,14 +1,12 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
-import NavBar from './components/NavBar';
-
-const hello = () => {
-  return <div>hello</div>;
-} 
+import Landing from './components/landing';
+import Stats from './components/stats';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={hello} />
+    <IndexRoute component={Landing} />
+    <Route path="/:username" component={Stats} />
   </Route>
 );

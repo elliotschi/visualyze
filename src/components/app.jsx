@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import NavBar from './navBar';
 
-const App = ({children}) => (
+const App = ({children, history}) => (
   <div className="container-fluid">
-    <NavBar />
+    <NavBar history={history} />
     <div>
       {children}
     </div>

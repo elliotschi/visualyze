@@ -1,10 +1,11 @@
 import React from 'react';
+import { Navbar, NavItem } from 'react-materialize';
+import Search from './search';
 
-const NavBar = () => (
+const NavBar = ({history}) => (
   <nav>
-    <div className="nav-wrapper">
-      <a href="/" className="brand-logo">visualyze</a>
-    </div>
+    <Search history={history} />
+    <NavItem href="/">visualyze</NavItem>
   </nav>
 );
 
