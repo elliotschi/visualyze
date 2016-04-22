@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
-import Landing from './components/landing';
-import Stats from './components/stats';
+import Landing from './components/landing/landing';
+import Stats from './components/stats/stats';
 
 export default (
   <Route path="/" component={App}>
