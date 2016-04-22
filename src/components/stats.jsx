@@ -8,9 +8,11 @@ class Stats extends Component {
   }
   
   render() {
+    const { username } = this.props.params;
+
     return (
       <div>
-        Stats
+        Stats for {username}
       </div>
     );
   }

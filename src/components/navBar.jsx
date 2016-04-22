@@ -3,9 +3,11 @@ import { Navbar, NavItem } from 'react-materialize';
 import Search from './search';
 
 const NavBar = ({history}) => (
-  <nav>
-    <Search history={history} />
-    <NavItem href="/">visualyze</NavItem>
+  <nav className="green">
+    <div className="row">
+      <Search history={history} />
+      <a href="/" className="brand-logo center">visualyze</a>
+    </div>
   </nav>
 );
 

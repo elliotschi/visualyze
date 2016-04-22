@@ -7,9 +7,7 @@ class Search extends Component {
   }
   
   onChange(e) {
-    console.log('hi');
     this.username = e.target.value;
-    console.log(this.username)
   }
   
   getRef(ref) {
@@ -25,34 +23,17 @@ class Search extends Component {
   
   render() {
     return (
-      <form onSubmit={this.handleSubmit.bind(this)}>
-        <div className="input-field">
+      <form onSubmit={this.handleSubmit.bind(this)} className="col s6">
+        <div className="input-field col s6">
           <input id="search" type="text" ref={(ref) => this.getRef(ref)} placeholder="Search a Github Username" required></input>
           <label for="search">
             <i className="material-icons">search</i>
           </label>
+          <i class="material-icons">close</i>
         </div>
       </form>
     );
   }
-  // render() {
-  //   return (
-  //     <form onSubmit={this.handleSubmit.bind(this)}>
-  //       <Row>
-  //         <Input 
-  //           placeholder="Search a Github Username" 
-  //           s={6}
-  //           id="search"
-  //           type="text"
-  //           onChange={this.onChange.bind(this)}
-  //           required>
-  //           <Icon>search</Icon>
-  //         </Input>
-  //       </Row>
-  //     </form>
-  //   );
-  // }
-  
 }
 
 export default Search;
