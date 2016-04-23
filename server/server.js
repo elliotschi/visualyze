@@ -26,7 +26,7 @@ app.get('/api/github/:username', (req, res) => {
       }
     })
       .then(result => {
-        // console.log('this is the data: ', result.body)
+        console.log('this is the data: ', result.body)
         res.send(JSON.parse(result.body));
       })
       .catch(err => {
