@@ -29,7 +29,6 @@ class Search extends Component {
           <label for="search">
             <i className="material-icons">search</i>
           </label>
-          <i class="material-icons">close</i>
         </div>
       </form>
     );
