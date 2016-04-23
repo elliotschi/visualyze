@@ -1,25 +1,32 @@
 import React, { PropTypes } from 'react';
-import { Collection, CollectionItem, MediaBox, Card, CardTitle, Col } from 'react-materialize';
+import { Card, CardTitle, Col, Row } from 'react-materialize';
 
 const UserInfo = ({userInfo}) => (
-  <div className="row">
-  <Col s={3} m={3}>
+  <Row>
+  <Col s={5} m={3}>
     <Card 
     header={
       <CardTitle reveal image={userInfo.avatar_url} waves="light" />
     }
     title={userInfo.login}
     reveal={
-          <Collection>
-      {userInfo.name && <CollectionItem>{userInfo.name}</CollectionItem>}
-      
-    </Collection>
+      <ul className="collection">
+      {userInfo.name && <a className="collection-item">Name: {userInfo.name}</a>}
+      {userInfo.login && <a className="collection-item">Username: {userInfo.login}</a>}
+      {userInfo.email && <a className="collection-item">Email: {userInfo.email}</a>}
+      {userInfo.location && <a className="collection-item">Location: {userInfo.location}</a>}
+      {userInfo.company && <a className="collection-item">Company: {userInfo.company}</a>}
+      {userInfo.followers && <a className="collection-item">Followers: {userInfo.followers}</a>}
+      {userInfo.following && <a className="collection-item">Following: {userInfo.following}</a>}
+      {userInfo.following && <a className="collection-item">Pubac Repos: {userInfo.pubac_repos}</a>}
+      {userInfo.blog && <a className="collection-item">Blog: <a href={userInfo.blog}> {userInfo.blog}</a></a>}
+      </ul>
     }
     >
       
     </Card>
     </Col>
-  </div>
+  </Row>
 );
 
 UserInfo.propTypes = {
@@ -27,3 +34,4 @@ UserInfo.propTypes = {
 }
 
 export default UserInfo;
+
