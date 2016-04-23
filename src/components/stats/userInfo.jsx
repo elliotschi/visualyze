@@ -18,7 +18,7 @@ const UserInfo = ({userInfo}) => (
       {userInfo.company && <a className="collection-item">Company: {userInfo.company}</a>}
       {userInfo.followers && <a className="collection-item">Followers: {userInfo.followers}</a>}
       {userInfo.following && <a className="collection-item">Following: {userInfo.following}</a>}
-      {userInfo.following && <a className="collection-item">Pubac Repos: {userInfo.pubac_repos}</a>}
+      {userInfo.following && <a className="collection-item">Public Repos: {userInfo.public_repos}</a>}
       {userInfo.blog && <a className="collection-item">Blog: <a href={userInfo.blog}> {userInfo.blog}</a></a>}
       </ul>
     }
