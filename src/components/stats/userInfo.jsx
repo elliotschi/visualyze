@@ -3,7 +3,7 @@ import { Collection, CollectionItem, MediaBox, Card, CardTitle, Col } from 'reac
 
 const UserInfo = ({userInfo}) => (
   <div className="row">
-  <Col s={1} m={3}>
+  <Col s={3} m={3}>
     <Card 
     header={
       <CardTitle reveal image={userInfo.avatar_url} waves="light" />
