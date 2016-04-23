@@ -3,7 +3,7 @@ import { Card, CardTitle, Col, Row } from 'react-materialize';
 
 const UserInfo = ({userInfo}) => (
   <Row>
-  <Col s={5} m={3}>
+  <Col s={12} m={3}>
     <Card 
     header={
       <CardTitle reveal image={userInfo.avatar_url} waves="light" />
