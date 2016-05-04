@@ -4,7 +4,7 @@ const express = require('express');
 const joinPaths = require('path').join;
 const history = require('connect-history-api-fallback');
 const pify = require('pify');
-const request = pify(require('request'));
+const request = pify(require('request'), {multiArgs: true});
 const utils = require('./config/utils');
 const morgan = require('morgan');
 
