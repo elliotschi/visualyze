@@ -18,7 +18,7 @@ class Search extends Component {
     event.preventDefault();
     const username = this.username.value;
     this.username.value = '';
-    this.context.router.push(`/${username}`)
+    this.context.router.push(`/${username}`);
   }
   
   render() {

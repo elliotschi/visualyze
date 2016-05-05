@@ -4,16 +4,8 @@ import { Modal, Button, Row } from 'react-materialize';
 const Landing = ({repos}) => (
   <Row>
     <ul>
-      {repos ? repos.map((repo, i) => <li key={i}>{JSON.stringify(repo)}</li>) : null}
+      {repos ? repos.map((repo, i) => <li key={i}>{repo.full_name}</li>) : null}
     </ul>
-    <Modal
-      header='About'
-      bottomSheet
-      trigger={
-        <Button waves='light'>MODAL!!!!!!!</Button>
-      }>
-      Visualyze searches and displaces information about github
-    </Modal>
   </Row>
 );
 

@@ -9,6 +9,6 @@ import StatsContainer from './containers/stats';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={LandingContainer} />
-    <Route path="/:username" component={Stats} />
+    <Route path="/:username" component={StatsContainer} />
   </Route>
 );
