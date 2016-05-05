@@ -8,7 +8,7 @@ var plugins = [
   })
 ];
 
-if(process.env.NODE_ENV === 'production'){
+if (process.env.NODE_ENV === 'production'){
   plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
