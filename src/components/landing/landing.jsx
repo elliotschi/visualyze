@@ -1,8 +1,11 @@
 import React from 'react';
 import { Modal, Button, Row } from 'react-materialize';
 
-const Landing = () => (
+const Landing = ({repos}) => (
   <Row>
+    <ul>
+      {repos ? repos.map((repo, i) => <li key={i}>{JSON.stringify(repo)}</li>) : null}
+    </ul>
     <Modal
       header='About'
       bottomSheet

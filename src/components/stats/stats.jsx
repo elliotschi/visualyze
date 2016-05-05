@@ -24,7 +24,7 @@ class Stats extends Component {
   }
    
   init(username) {
-    axios.get(`/api/github/${username}`)
+    axios.get(`/api/github/user/${username}`)
       .then(userInfo => {
         this.setState({user: userInfo.data});
       });

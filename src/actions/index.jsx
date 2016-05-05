@@ -4,7 +4,7 @@ import * as types from '../constants/actionTypes';
 const { FETCH_GITHUB_USER, FETCH_GITHUB_REPOS } = types;
 
 export const fetchGithubUser = (username) => {
-  const request = axios.get(`/api/github/${username}`);
+  const request = axios.get(`/api/github/user/${username}`);
 
   return {
     type: FETCH_GITHUB_USER,
