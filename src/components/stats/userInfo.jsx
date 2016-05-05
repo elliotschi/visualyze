@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import { Card, CardTitle, Col, Row } from 'react-materialize';
 
 const UserInfo = ({userInfo}) => {
-  console.log(userInfo)
   return(<Row>
   <Col s={12} m={3}>
     <Card 
